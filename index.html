@@ -78,9 +78,9 @@
                 function myFunction (minValue,maxValue){
                     for(var i = minValue; i<maxValue;i++){
                         
-                        if(minValue == 0 && maxValue == 5){document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');}
-                        else if(minValue == 1 && maxValue == 6){document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');}
-                        else{alert("you will see this messege 5 times insted of my cars buddy :p");}
+                        if(minValue == 0 && maxValue == numberOfViews){document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');}
+                        else if(minValue == 1 && maxValue == numberOfViews ){document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');}
+                        else{alert("you will see this messege 5 times insted of my cars buddy :p you should refresh the page and answer with yes or no");}
                     };
                 }
                 var userName = prompt("username: ");
@@ -88,24 +88,25 @@
                     userName = prompt("you write "+ userName +" and this is a wrong username, try 'abdalrhman'");
                 }
     
-                var userQuestion = prompt("Do you wan to see my black bmw 5 times? answer with 'yes' or 'no'")
+                var userQuestion = prompt("Do you wan to see my black bmw? answer with 'yes' or 'no'")
                 if (userQuestion === 'yes'){
-                    alert("Let's go");
-                    
-                    myFunction(0,5);
+                
+                    var numberOfViews = prompt("How many time do you want see the black one?")
+                    myFunction(0,numberOfViews);
                 }
                     // for(var i = 0; i<5;i++){
                     //  document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');   
                     // } }
                     else if (userQuestion === 'no'){
-                     alert("Okay then we will see the red one");
-                     myFunction(1,6);}
+                         numberOfViews = prompt("Then You wanna see My red M5 :D, How many time do you want see the red one?");
+                         numberOfViews++;
+                     myFunction(1,numberOfViews);}
                     // for(var j = 0; j<5;j++){
                     //     document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');
                     // } }
                      else{
                     //     for(var z = 0; z<5;z++)
-                    myFunction(2,7);
+                    myFunction(0,5);
                 }
                     // }
     
