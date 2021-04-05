@@ -3,19 +3,37 @@
 
     <head>
         <title>bmw-wireframe</title>
+        <script>
+            
+function myFunction (minValue,maxValue){
+    for(var i = minValue; i<maxValue;i++){
+        
+        if(minValue == 0 && maxValue == numberOfViews)
+        {
+            document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');
+        }
+        
+        else if(minValue == 1 && maxValue == numberOfViews )
+        {
+            document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');
+        }
+        
+    }
+}
+
+        </script>
     </head>
 
     <body>
         
-        <!-- <script src="welcome-messege.js"></script> -->
-
+        <script src="welcome-messege.js"></script>
+        <script src="color.js"></script>
         <header> 
 
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/17031059-6858-4631-8040-ef4f6ad0d514/d66yn5l-8fed37cf-5985-4887-812d-7d8d9e3fb3fc.png" 
             alt="" 
             width="100px">
             
-            <!-- <script src="condition.js"></script> -->
 
             <h2>Crew team</h2>
             <nav>
@@ -35,7 +53,7 @@
             <section>
                  <img 
                  src="https://i2.wp.com/us.motorsactu.com/wp-content/uploads/2020/01/New-all-time-high-for-BMW-Group-deliveries-in-2019-confirms-position-as-world%E2%80%99s-leading-premium-car-company.jpg?fit=1202%2C675&ssl=1" 
-                 alt=""
+                 alt="hero-img"
                  width="100%">
              </section>
 
@@ -73,51 +91,11 @@
                 <input type="text">
                 <button> <a href="submission-page.html">submit</a></button>
              </section>
-
-             <script>
-                function myFunction (minValue,maxValue){
-                    for(var i = minValue; i<maxValue;i++){
-                        
-                        if(minValue == 0 && maxValue == numberOfViews){document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');}
-                        else if(minValue == 1 && maxValue == numberOfViews ){document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');}
-                        else{alert("you will see this messege 5 times insted of my cars buddy :p you should refresh the page and answer with yes or no");}
-                    };
-                }
-                var userName = prompt("username: ");
-                while (userName !== 'abdalrhman' && userName !== 'ABDALRHMAN' ){
-                    userName = prompt("you write "+ userName +" and this is a wrong username, try 'abdalrhman'");
-                }
-    
-                var userQuestion = prompt("Do you wan to see my black bmw? answer with 'yes' or 'no'")
-                if (userQuestion === 'yes'){
-                
-                    var numberOfViews = prompt("How many time do you want see the black one?")
-                    myFunction(0,numberOfViews);
-                }
-                    // for(var i = 0; i<5;i++){
-                    //  document.write('<img src="https://i.pinimg.com/originals/66/80/49/6680491980eca7165eed1c8c06b844f8.jpg"/>');   
-                    // } }
-                    else if (userQuestion === 'no'){
-                         numberOfViews = prompt("Then You wanna see My red M5 :D, How many time do you want see the red one?");
-                         numberOfViews++;
-                     myFunction(1,numberOfViews);}
-                    // for(var j = 0; j<5;j++){
-                    //     document.write('<img src="https://i.pinimg.com/originals/3f/2e/a8/3f2ea810138e7325f2a158401048e293.jpg"/>');
-                    // } }
-                     else{
-                    //     for(var z = 0; z<5;z++)
-                    myFunction(0,5);
-                }
-                    // }
-    
-                
-            </script>
-
+             <script src="condition.js"></script>
          </main>
-         <!-- <script src="scale.js"></script> -->
+         <script src="scale.js"></script>
         <footer>
             <p> All right are reserved &copy; </p>
-            <!-- <script src="color.js"></script> -->
         </footer>
 
     </body>

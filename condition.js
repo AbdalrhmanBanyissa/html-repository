@@ -1,14 +1,24 @@
-var userAge = prompt("Enter your age :")
+var userQuestion = prompt("Do you wan to see my black bmw?")
 
-if(userAge >= 18){
-    document.write("Hello " + userName + " how can I help you ?")
+while (userQuestion !== 'yes' && userQuestion !== 'no' ){
+    userQuestion = prompt("try yes or no");
 }
 
+if (userQuestion === 'yes'){
 
-else if(userAge < 18){
-    document.write("Hello " + userName + " This site is for adults ")
+    var numberOfViews = prompt("How many time do you want see the black one?")
+    "./src=functionClass.js"
+    myFunction(0,numberOfViews);
 }
 
-else(
-    document.write("Plese enter your age correct")
-)
+    else if (userQuestion === 'no'){
+
+         numberOfViews = prompt("Then You wanna see My red M5 :D, How many time do you want see the red one?");
+         numberOfViews++;
+     myFunction(1,numberOfViews);
+    
+    }
+    else{
+        alert("you will see my default webpage ");
+    }
+
