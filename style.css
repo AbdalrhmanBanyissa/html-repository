@@ -1,0 +1,72 @@
+body {
+    
+    width: 90%;
+    margin: auto;
+  }
+
+  header h2 {
+    float: r;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+  }
+  
+  header img {
+    float: left;
+    width: 75px;
+    
+  }
+
+  header nav {
+      background-color: #FFF4DE;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 3px solid;
+    border-radius: 15cm;
+    text-align: center;
+    float: center;
+    word-spacing: 1cm;
+  }
+  
+  .heroImage {
+    width: 100;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  section article {
+    float: right;
+    
+  }
+  section article {
+    float: left; 
+    width: 50%;
+    display: inline-block;
+  }
+
+
+    form * {
+        
+      width: 100%;
+      display: inline-block;
+  }
+
+  form label {
+      color: rgb(160, 13, 13);
+      display: inline-block;
+      text-align: center;
+      font-size: 25px;
+  }
+
+  h4 {
+      text-align: center;
+      background-color: gray;
+      color: cornsilk;
+  }
+
+  footer {
+      text-align: center;
+      background-color: gray;
+      color: rgb(255, 248, 220);
+  }
